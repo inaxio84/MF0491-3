@@ -1,53 +1,180 @@
-h1{
-    padding-left: 30%;
-    font-size: 1em;
-    font-weight: 600;
-    color:rgb(209, 208, 208);
-    margin-top:0;
-    padding-top: 10px;
-    display:inline-block;
-
-}
-header{
-    text-align: center;
-    height: 50px;
-    background-color: rgb(56, 56, 56);
-    margin-top: 0;
+h1 {
+  padding-left: 20%;
+  font-size: 1em;
+  font-weight: 600;
+  color: rgb(209, 208, 208);
+  margin-top: 0;
+  padding-top: 10px;
+  display: inline-block;
 }
 
-.carrito{
-    //display:inline-block;
-    background-color: rgb(56, 165, 56);
-    width: 10%;
-    height: 50px;
-    float: right;
+header {
+  text-align: center;
+  height: 50px;
+  background-color: rgb(56, 56, 56);
+  margin-top: 0;
+}
+
+.navbar-form{
+    display:block;
+}
+
+.carrito {
+  //display:inline-block;
+  background-color: rgb(56, 165, 56);
+  width: 15%;
+  height: 50px;
+  float: right;
+  color: white;
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
     color: white;
-
+    text-decoration: none;
+  }
 }
 
-.glyphicon-shopping-cart{
-    font-size: 2em;
-    padding-top:5px;
-    color:white;
+.glyphicon-shopping-cart {
+  font-size: 2em;
+  padding-top: 5px;
+  color: white;
 }
 
-.glyphicon-search{
-
-    width:23px;
-    height: 20px;
+.glyphicon-search {
+  width: 23px;
+  height: 20px;
 }
 
-.buscador{
-    padding-left: 10%;
+.buscador {
+  padding-left: 10%;
+  display: inline-block;
+}
+
+.badge {
+  float: left;
+  background-color: green;
+}
+
+.badge {
+  float: left;
+  background-color: green;
+}
+
+section {
+  margin-top: 20px;
+}
+
+.detalle {
+  width: 500px;
+  float: right;
+}
+
+.descuento {
+  background-color: red;
+}
+
+.thumbnail {
+  img {
+    max-height: 150px;
+  }
+  a {
+    bottom: 5px;
+  }
+  min-height: 380px;
+}
+
+.precio1 {
+  position: relative;
+  font-size: 1.2em;
+}
+
+.precio1:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 1px solid;
+  border-color: black;
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+
+.precio2 {
+  float: right;
+  color: red;
+  font-size: 1.4em;
+}
+
+.precio3 {
+  font-size: 2em;
+}
+
+//estilos para el incremento decremento de cantidad:
+
+.cantidad {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+
+  }
+  
+  .value-button {
     display: inline-block;
-
-}
-
-.badge{
-    float: left;
-    background-color: green;
-}
-
-section{
-    margin-top:20px;
-}
+    border: 1px solid #ddd;
+    margin: 0px;
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 11px 0;
+    background: #eee;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .value-button:hover {
+    cursor: pointer;
+  }
+  
+  .cantidad #decrease {
+    margin-right: -4px;
+    border-radius: 8px 0 0 8px;
+    height: 40px;
+  }
+  
+  .cantidad #increase {
+    margin-left: -4px;
+    border-radius: 0 8px 8px 0;
+    height: 40px;
+  }
+  
+  .cantidad #input-wrap {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  input#number {
+    text-align: center;
+    border: none;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 0px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }

@@ -22,8 +22,9 @@ export class ProductoService {
        producto.foto=el.foto;
        producto.precio=el.precio;
        producto.precio_ud=el.precio_ud;
-       producto.descuento =el.descuento;
-       producto.cantidad =el.cantidad;
+       producto.tieneDescuento=el.tieneDescuento;
+       producto.descuento=el.descuento;
+       producto.cantidad=el.cantidad;
       
        this.productos.push(producto);
     });

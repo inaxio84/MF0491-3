@@ -4,6 +4,7 @@ export class Producto{
     foto : string;
     precio : number;
     precio_ud : string;
+    tieneDescuento :boolean;
     descuento : number;
     cantidad: number;
     
@@ -13,6 +14,7 @@ export class Producto{
         this.foto="../../assets/img/default.png";  
         this.precio = 1;
         this.precio_ud = "1";
+        this.tieneDescuento = false;
         this.descuento = 0;
         this.cantidad = 1;
 

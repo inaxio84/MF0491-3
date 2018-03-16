@@ -8,8 +8,9 @@ import { Producto } from '../model/producto';
   styleUrls: ['./productos.component.scss']
 })
 export class ProductosComponent implements OnInit {
-
+  precioDescuento:number;
   productos : Producto[]; //Array<Receta>
+  producto:Producto;
 
   constructor(private productoService : ProductoService ) {
     console.log('ProductosComponent constructor');
@@ -20,5 +21,19 @@ export class ProductosComponent implements OnInit {
     console.log('ProductosComponent ngOnInit');
     this.productos = this.productoService.getAll();
   }
+
+  increaseValue(producto){
+
+    this.producto.cantidad=producto.cantidad++;
+
+  }
+
+  decreaseValue(producto){
+    if(producto.cantidad>0){
+      this.producto.cantidad=producto.cantidad--;
+    }
+
+  }
+  
 
 }

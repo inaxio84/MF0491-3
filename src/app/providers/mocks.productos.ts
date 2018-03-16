@@ -5,6 +5,7 @@ export class MOCKS_PRODUCTOS {
 		"foto": "../../assets/img/natillas.jpg",
 		"precio": 1.90,
 		"precio_ud": "1 KILO A 3,76 €",
+		"tieneDescuento":true,
         "descuento": 20,
         "cantidad": 1
 	},
@@ -13,6 +14,7 @@ export class MOCKS_PRODUCTOS {
 		"foto": "../../assets/img/atun.jpg",
 		"precio": 2.57,
 		"precio_ud": "1 KILO A 10,75 €",
+		"tieneDescuento":false,
         "descuento": 0,
         "cantidad": 1
 	},
@@ -21,6 +23,7 @@ export class MOCKS_PRODUCTOS {
 		"foto": "../../assets/img/aceite.jpg",
 		"precio": 6.14,
 		"precio_ud": "1 LITRO A 6,14 €",
+		"tieneDescuento":true,
         "descuento": 10,
         "cantidad": 1
 	},
@@ -29,6 +32,7 @@ export class MOCKS_PRODUCTOS {
 		"foto": "../../assets/img/papel.jpg",
 		"precio": 9.99,
 		"precio_ud": "1 ROLLO A 0,25 €",
+		"tieneDescuento":false,
 		"descuento": 0,
         "cantidad": 1
 	},
@@ -37,6 +41,7 @@ export class MOCKS_PRODUCTOS {
 		"foto": "../../assets/img/arroz.jpg",
 		"precio": 1.20,
 		"precio_ud": "1 KILO A 1.20 €",
+		"tieneDescuento":false,
         "descuento": 0,
         "cantidad": 1
 	},
@@ -45,6 +50,7 @@ export class MOCKS_PRODUCTOS {
 		"foto": "../../assets/img/galletas.jpg",
 		"precio": 2.13,
 		"precio_ud": "1 KILO A 5,18 €",
+		"tieneDescuento":false,
         "descuento": 0,
         "cantidad": 1
 	},
@@ -53,6 +59,7 @@ export class MOCKS_PRODUCTOS {
 		"foto": "../../assets/img/cerveza.jpg",
 		"precio": 6,
 		"precio_ud": "1 LITRO A 1,52 €",
+		"tieneDescuento":false,
         "descuento": 0,
         "cantidad": 1
 	},
@@ -61,6 +68,7 @@ export class MOCKS_PRODUCTOS {
 		"foto": "../../assets/img/colacao.jpg",
 		"precio": 6.55,
 		"precio_ud": "1 KILO A 5,46 €",
+		"tieneDescuento":true,
         "descuento": 15,
         "cantidad": 1
 	},
@@ -69,6 +77,7 @@ export class MOCKS_PRODUCTOS {
 		"foto": "../../assets/img/detergente.jpg",
 		"precio": 12.99,
 		"precio_ud": "1 DOSIS A 0,18 €",
+		"tieneDescuento":false,
         "descuento": 0,
         "cantidad": 1
 	}
