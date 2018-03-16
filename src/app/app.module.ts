@@ -1,10 +1,17 @@
+import {HttpClientModule} from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule} from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-
+//Componentes
 import { AppComponent } from './app.component';
 import { ProductosComponent } from './productos/productos.component';
+
+//Servicios
 import { ProductoService } from './providers/producto.service';
+
+//pipes
+
 
 
 @NgModule({
@@ -13,9 +20,15 @@ import { ProductoService } from './providers/producto.service';
     ProductosComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [ProductoService],
+  providers: [
+    ProductoService,
+    HttpClientModule
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
