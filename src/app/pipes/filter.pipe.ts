@@ -5,30 +5,24 @@ import { Producto } from '../model/producto';
 })
 export class FilterPipe implements PipeTransform {
 
-    /**
-     * Filtro para buscar en una coleccion de productos. No es CaseSensitive
-     */
+  /**
+   * Filtro para buscar en una coleccion de productos. No es CaseSensitive
+   */
   transform(productos: Producto[], searchText: string): Producto[] {
 
     //si no hay productos retornar vacío
-    if(!productos) {return [];}
-
+    if (!productos) { return []; }
+    if (!searchText) return productos;
+    searchText = searchText.toLowerCase();
+    let nombreProducto = "";
     let productosFilterArray: Producto[] = [];
-    
-    
+    return productos.filter(productIt => {
+      nombreProducto = productIt.nombre;
+      nombreProducto = nombreProducto.toLowerCase();
+      return nombreProducto.includes(searchText);
+    });
 
-    // filtramos por texto si hay
-    if (!searchText) {
-      return productosFilterArray;
-    } else {
-      searchText = searchText.toLowerCase();
-      let producto = '';
-      return productosFilterArray.filter(it => {
-        producto = it.nombre;
-        producto = producto.toLowerCase();
-        return producto.includes(searchText);
-      });
-    }
+
   }
 
 }

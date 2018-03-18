@@ -21,18 +21,13 @@ header {
 
 .carrito {
   //display:inline-block;
+  margin-right: 30px;
   background-color: rgb(56, 165, 56);
   width: 15%;
   height: 50px;
   float: right;
   color: white;
-  a:link,
-  a:visited,
-  a:hover,
-  a:active {
-    color: white;
-    text-decoration: none;
-  }
+  cursor:pointer;
 }
 
 .glyphicon-shopping-cart {
@@ -65,7 +60,8 @@ section {
   margin-top: 20px;
 }
 
-.detalle {
+.collapse {
+  background-color: beige;
   width: 500px;
   float: right;
 }
