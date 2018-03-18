@@ -7,6 +7,8 @@ export class Producto{
     tieneDescuento :boolean;
     descuento : number;
     cantidad: number;
+    precioDescuento: number;
+    
     
     constructor(){
         console.log('Producto constructor');
@@ -17,6 +19,7 @@ export class Producto{
         this.tieneDescuento = false;
         this.descuento = 0;
         this.cantidad = 1;
+        this.precioDescuento = 1;
 
     }
     

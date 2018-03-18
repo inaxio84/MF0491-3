@@ -35,6 +35,27 @@ header {
   padding-top: 5px;
   color: white;
 }
+.dropdown-menu{
+  width:500px;
+  left:-200px;
+}
+
+.listaCarrito{
+  overflow: hidden;
+  height: 40px;
+  color: rgb(104, 104, 104);
+  border-bottom: 1px solid black;
+  padding-left: 20px;
+}
+.glyphicon-trash{
+  float:right;
+  background-color: rgb(175, 174, 174);
+  height: 40px;
+  text-align:right;
+  font-size: 1.5em; 
+  vertical-align: auto;
+
+}
 
 .glyphicon-search {
   width: 23px;
@@ -51,10 +72,6 @@ header {
   background-color: green;
 }
 
-.badge {
-  float: left;
-  background-color: green;
-}
 
 section {
   margin-top: 20px;
@@ -68,6 +85,7 @@ section {
 
 .descuento {
   background-color: red;
+  font-size: 1.7em;
 }
 
 .thumbnail {
@@ -77,7 +95,7 @@ section {
   a {
     bottom: 5px;
   }
-  min-height: 380px;
+  min-height: 450px;
 }
 
 .precio1 {
@@ -110,13 +128,16 @@ section {
   font-size: 2em;
 }
 
-//estilos para el incremento decremento de cantidad:
+.btn-success{
+  width:80%;
+  margin-left: 10%;
+}
 
+//estilos para los botones incremento decremento de cantidad:
 .cantidad {
     width: 300px;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 50px;
+    margin: auto;
+    padding-left:25%;
 
   }
   
@@ -174,3 +195,5 @@ section {
       -webkit-appearance: none;
       margin: 0;
   }
+
+  //fin estilos para el incremento decremento de cantidad

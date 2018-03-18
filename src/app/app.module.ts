@@ -12,14 +12,16 @@ import { ProductoService } from './providers/producto.service';
 
 //pipes
 import { FilterPipe } from './pipes/filter.pipe'; 
-
+import { RoundPipe } from './pipes/round.pipe';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductosComponent,
-    FilterPipe
+    FilterPipe,
+    RoundPipe
+
   ],
   imports: [
     BrowserModule,

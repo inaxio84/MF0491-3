@@ -25,6 +25,8 @@ export class ProductoService {
        producto.tieneDescuento=el.tieneDescuento;
        producto.descuento=el.descuento;
        producto.cantidad=el.cantidad;
+       //precioDescuento: precio en oferta calculado con el precio y el % de descuento;
+       producto.precioDescuento=el.precio-(el.precio*el.descuento/100);
       
        this.productos.push(producto);
     });
