@@ -21,13 +21,31 @@
         <div id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <span class="badge">{{totalProductos}}</span>
           <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-          <span>{{precioTotal | round}}</span>
+          <span>{{precioTotal | round}}€</span>
           <span class="caret"></span>
         </div>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
           <li class="listaCarrito" *ngFor="let producto of carrito">
-            <span>{{producto.nombre}}: {{producto.cantidad}} </span>
-            <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+            <div class="logo">
+              <img src="{{producto.foto}}" alt="{{producto.nombre}}">
+            </div>
+            <div class="nombre">
+              <span>
+                <b>{{producto.precio}} €</b>
+              </span>
+              <br>
+              <span>{{producto.nombre}}</span>
+            </div>
+            <div class="cuantos">
+              <form class="cantidad">
+                <div class="value-button" id="decrease" (click)="decreaseValue(producto)" value="Decrease Value">-</div>
+                <input type="number" id="number" value="{{producto.cantidad}}" />
+                <div class="value-button" id="increase" (click)="increaseValue(producto)" value="Increase Value">+</div>
+              </form>
+            </div>
+            <div class="trash">
+              <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+            </div>
           </li>
           <li role="separator" class="divider"></li>
           <li>
