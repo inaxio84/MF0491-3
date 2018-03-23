@@ -50,6 +50,12 @@ export class ProductosComponent implements OnInit {
     this.totalProductos+=product.cantidad;
 
   }
+
+  vaciarCarrito(){
+    this.carrito=[];
+    this.precioTotal=0;
+
+  }
   
 
 }
